@@ -64,8 +64,8 @@ PRODUCT_COPY_FILES += \
 
 # CMActions
 PRODUCT_PACKAGES += \
-    CMActions \
-    libjni_CMActions
+    LineageActions \
+    libjni_LineageActions
 
 # Display
 PRODUCT_AAPT_CONFIG := normal
@@ -143,7 +143,7 @@ PRODUCT_PACKAGES += \
 
 # Memory
 $(call inherit-product, frameworks/native/build/phone-xxxhdpi-3072-dalvik-heap.mk)
-$(call inherit-product, frameworks/native/build/phone-xxxhdpi-3072-hwui-memory.mk)
+#$(call inherit-product, frameworks/native/build/phone-xxxhdpi-3072-hwui-memory.mk)
 
 # NFC
 PRODUCT_COPY_FILES += \
@@ -243,6 +243,3 @@ PRODUCT_PACKAGES += \
     libwpa_client \
     wpa_supplicant \
     wpa_supplicant.conf
-
-  ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
-  ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
